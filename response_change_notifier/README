@@ -1,0 +1,6 @@
+Response Change Notifier
+========================
+
+Sends an alert whenever the response body from the specified URL changes.
+
+Based on the url_monitor plugin.
