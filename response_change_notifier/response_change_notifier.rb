@@ -27,10 +27,10 @@ class ResponseChangeNotifier < Scout::Plugin
           Message: #{response.message}
           
           Previous Response:
-          #{memory(:last_response)}
+          #{memory(:last_response).gsub('<', '&lt;').gsub('>', '&gt;')}
           
           Current Response:
-          #{response.body}
+          #{response.body.gsub('<', '&lt;').gsub('>', '&gt;')}
         EOF
       end
     end
